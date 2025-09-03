@@ -1,0 +1,58 @@
+.LinkedIn {
+
+    background-color: rgb(10, 101, 186);
+    color: aliceblue;
+    border: none;
+    border-radius: 8%;
+    text-decoration: none;
+    cursor: pointer;
+    height: 36px;
+}
+
+
+#About {
+    text-align: center;
+}
+
+
+#Connect {
+    text-align: center;
+}
+
+#Connect a:hover {
+    color: rgb(202, 0, 0);
+
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: rgb(208, 204, 204);
+}
+
+p {
+    color: rgb(9, 115, 22);
+}
+
+h1 {
+    text-align: center;
+    color: rgb(12, 97, 12);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 100;
+}
+
+#Experience {
+    text-align: center;
+}
+
+#Experience li {
+    border-color: rgb(148, 11, 11);
+    border-style: dashed;
+    display: inline;
+    margin: 15px;
+}
+
+h2 {
+    size: 100px;
+    color: rgb(23, 74, 8);
+    font-weight: bold;
+}
