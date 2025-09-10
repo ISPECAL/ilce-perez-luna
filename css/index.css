@@ -14,9 +14,23 @@
     text-align: center;
 }
 
+#Skills {
+    text-align: center;
+}
+
+#Projects {
+    text-align: center;
+}
+
 
 #Connect {
+
     text-align: center;
+}
+
+#Connect li {
+    text-align: center;
+    list-style: none;
 }
 
 #Connect a:hover {
@@ -55,4 +69,30 @@ h2 {
     size: 100px;
     color: rgb(23, 74, 8);
     font-weight: bold;
+}
+
+nav ul {
+    text-align: center;
+    list-style-type: none;
+    background-color: orange;
+    padding: 1%;
+    overflow: hidden;
+    margin: 1%;
+}
+
+nav a {
+    color: rgb(4, 73, 4);
+    list-style-type: none;
+    text-decoration: none;
+    display: block;
+}
+
+nav a :hover {
+    background-color: greenyellow;
+}
+
+
+nav li {
+
+    float: center;
 }
