@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 .LinkedIn {
 
@@ -14,26 +14,30 @@
 
 
 #About {
+    padding-top: 100px;
     text-align: center;
 }
 
 #Skills {
     text-align: center;
+    padding-top: 50px;
 }
 
 #Projects {
     text-align: center;
+    padding-top: 50px;
 }
 
 
 #Connect {
-
+    padding-top: 50px;
     text-align: center;
 }
 
 #Connect li {
     text-align: center;
     list-style: none;
+    display: inline-block
 }
 
 #Connect a:hover {
@@ -60,6 +64,7 @@ h1 {
 
 #Experience {
     text-align: center;
+    padding-top: 50px;
 }
 
 #Experience li {
@@ -76,29 +81,120 @@ h2 {
 
 }
 
-nav ul {
-    text-align: center;
-    list-style-type: none;
-    background-color: rgba(203, 0, 0, 0.904);
-    padding: 1%;
-    overflow: hidden;
-    margin: 1%;
-    font-family: 'Poppins', sans-serif;
+
+.header_menu li {
+    list-style: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-right: 15px;
+
+
 }
 
-nav a {
-    color: rgb(0, 0, 0);
-    list-style-type: none;
+.header_menu li a {
     text-decoration: none;
-    display: block;
+    color: rgb(0, 0, 0);
+    font-size: 15px;
+
 }
 
-nav a :hover {
-    background-color: greenyellow;
+.header_nav {
+    display: flex;
+    overflow: hidden;
+    align-items: right;
+}
+
+.header_logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+.header_menu {
+    padding: 23px;
+    margin: 5px;
+
+
+}
+
+.header_logo h1 {
+
+    color: rgb(0, 0, 0);
+    font-weight: 100;
+    font-size: 50px;
+
+
+}
+
+.header_menu li :hover {
+    background-color: rgb(244, 7, 7);
+    text-decoration: underline
 }
 
 
-nav li {
 
-    float: center;
+/*Phones*/
+@media (min-width:320px) and (max-width:667px) {
+
+    h2 {
+        font-size: 1.5rem;
+        color: rgb(173, 15, 15);
+        font-weight: lighter;
+        font-style: italic;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+
 }
+
+h1 {
+    padding-top: 4rem;
+    font-weight: bold;
+    font-style: italic;
+}
+
+
+img {
+    width: 4rem;
+    height: auto;
+}
+
+
+
+/*Tablets*/
+@media (min-width:667px) and (max-width:1023px) {
+
+
+
+    h2 {
+        font-size: 1.5rem;
+        color: rgb(173, 15, 15);
+        font-weight: lighter;
+        font-family: "Montserrat", sans-serif;
+    }
+
+    h1 {
+        padding-top: 4rem;
+        font-weight: bold;
+        font-style: italic;
+    }
+
+
+    img {
+        width: 4rem;
+        height: auto;
+    }
+
+}
+
+
+
+
+/*Desktop*/
+@media (min-width:1024px) {}
+
+
+/* When the screen gets smaller,
+make the nav bar a small dot to compress all text.*/
