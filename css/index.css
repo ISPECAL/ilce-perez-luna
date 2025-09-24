@@ -113,8 +113,8 @@ h2 {
 }
 
 .header_menu {
-    padding: 23px;
-    margin: 5px;
+    padding: 20px;
+    margin: 4px;
 
 
 }
@@ -198,3 +198,22 @@ img {
 
 /* When the screen gets smaller,
 make the nav bar a small dot to compress all text.*/
+
+/* Changes to li Skills Section */
+
+#Skills ul {
+    list-style: none;
+    color: rgb(172, 7, 48);
+    padding-left: 0%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px
+}
+
+#lupa {
+
+    width: 10px;
+    height: auto;
+    display: block;
+}
