@@ -10,15 +10,24 @@
 </head>
 
 <body>
-    <script defer src="js/index.js"></script>
+
     <header>
         <nav class="header_nav">
             <div class="header_logo">
-                <h1> Ilce </h1>
 
-
-                <div class="header_logo-overlay"></div>
+                <div class=" header_logo-overlay">
+                </div>
             </div>
+
+            <section id="Ilce_imgs">
+
+                <img src="images_redes/Add a heading.png" alt="Ilce" class="Ilce_main" id="Ilce_img">
+            </section>
+
+
+
+
+
 
 
             <ul class="header_menu">
@@ -27,7 +36,7 @@
                 <li><a href="#Skills">Skills </a></li>
                 <li><a href="#Projects"> Projects </a></li>
                 <li><a href="#Connect"> Connect </a></li>
-                <li><img src="images_redes/lupa.png" alt="search"> </li>
+
             </ul>
 
 
@@ -39,15 +48,15 @@
 
 
     <section id="About">
-        <h2> About </h2>
+        <h2 class="About_h2"> ABOUT </h2>
+
+
+        <p class="About_p"> International Business Graduate </p>
+        <p class="About_p"> Future software engineer & interested in creating great things, stories and worlds. </p>
     </section>
 
-    <p> International Business Graduate
-    <p> Future software engineer & interested in creating great things, stories and worlds. </p>
-
-
     <section id="Experience">
-        <h2>Experience</h2>
+        <h2>EXPERIENCE</h2>
 
         <ul>
 
@@ -62,32 +71,83 @@
 
     <section id="Skills">
 
-        <h2>Skills</h2>
+        <h2>SKILLS</h2>
         <ul></ul>
 
     </section>
 
     <section id="Projects">
 
-        <h2>Projects</h2>
+        <h2 class="Projects_h2">PROJECTS</h2>
         <ul></ul>
     </section>
 
     <section id="Connect">
 
 
-        <h2> Connect </h2>
+        <h2> CONNECT </h2>
         <ul>
 
             <li><a href="https://github.com/ISPECAL?tab=followers" class="Github" target="_blank">
-                    <img src="images_redes/GitHub-Logo.png">
+                    <img class="Github_pic" id="Github_logo1" src="images_redes/Github_logo.png">
                 </a> </li>
 
 
-            <li> <a href="https://www.linkedin.com/in/ilceperezc/" class="LinkedIn" target="_blank"> LinkedIn </a> </li>
+            <li> <a href="https://www.linkedin.com/in/ilceperezc/" class="LinkedIn" target="_blank">
+                    <img class="LinkedIn_class" id="linkedin_logo" src="images_redes/linkedin_logo.png">
+
+                </a> </li>
 
         </ul>
 
     </section>
-    <footer></footer>
+
+
+
+    <section id="tMessages">
+        <h2 id="leaveM"> LEAVE A MESSAGE</h2>
+        <form name='leave_message'>
+
+            <label for="usersName" id="yourN">Your Name: </label>
+            <input type="text" name="usersName" id="usersName" required>
+
+
+
+            <label for="usersEmail" id="yourE">Your Email:</label>
+            <input type="email" name="usersEmail" id="usersEmail" required>
+
+
+
+            <label for="usersMessage" id="yourM">Your Message:</label>
+            <textarea name="usersMessage" id="usersMessage" required id="message"></textarea>
+
+
+            <button id=buttonSubmit class="magneto" type="submit" onclick="formSubmit()" value="Submit">
+                Submit
+            </button>
+
+        </form>
+        <h2 id="titleM"> Messages</h2>
+        <ul id="messageN">
+        </ul>
+    </section>
+
+
+
+
+
+    </section>
+
+
+
+
+
+
+
+
+    <footer id="Footer"></footer>
+
+    <script defer src="js/index.js"></script>
+
+
 </body>
