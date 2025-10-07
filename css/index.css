@@ -178,18 +178,7 @@ h2 {
 
 
 /*Phones*/
-@media (min-width:320px) and (max-width:667px) {
-
-    h2 {
-        font-size: 1.5rem;
-        color: rgb(173, 15, 15);
-        font-weight: lighter;
-        font-style: italic;
-        font-family: 'Montserrat', sans-serif;
-    }
-
-
-}
+@media (min-width:320px) and (max-width:667px) {}
 
 h1 {
     padding-top: 4rem;
@@ -208,6 +197,18 @@ img {
 
 
 
+.header_menu li {
+    list-style: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-right: 15px;
+    margin-top: 32%;
+    position: relative;
+    top: -50px;
+
+
+}
 
 
 /*Tablets*/
