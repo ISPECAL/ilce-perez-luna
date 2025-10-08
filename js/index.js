@@ -112,3 +112,64 @@ document.addEventListener("DOMContentLoaded", function () {
         messageForm.reset();
     });
 });
+
+
+///GitHub Projects Area
+
+///To be flexible with code
+const username = 'ISPECAL';
+
+// Fetch GitHub repositories
+fetch(`https://api.github.com/users/${username}/repos`)
+    .then(response => {
+        // Check if the response is ok
+        if (!response.ok) {
+            throw new Error('Network response error, try again');
+        }
+        // Parse JSON from the response
+        return response.json();
+    })
+    .then(data => {
+        // Store the repositories in a variable
+        const repositories = data;
+
+        // Log the repositories to see the data structure
+        console.log(repositories);
+
+        // Select the project section by id
+        const projectSection = document.getElementById('Projects');
+
+        // Select the project list inside the project section
+        const projectList = projectSection.querySelector('ul');
+
+        // Loop through the repositories array
+        repositories.forEach(repositories => {
+            // Create a new list item element
+            const project = document.createElement('li');
+
+            // Create a new anchor element
+            //Link not clickable, need to fix<<<<<<//
+            const link = document.createElement('a');
+
+            // Set the href attribute to the repository's URL
+            link.href = repositories.html_url;
+
+            // Set the link's text to the repository's name
+            link.innerText = repositories.name;
+
+            //open link in new tab
+            link.target = '_blank';
+
+            // Append the link to the list item
+            project.appendChild(link);
+
+
+
+            // Append the new list item to the project list
+            projectList.appendChild(project);
+        });
+    })
+    .catch(error => {
+        // Catch and handle any errors
+        console.error('There was a problem with the fetch operation:', error);
+    });

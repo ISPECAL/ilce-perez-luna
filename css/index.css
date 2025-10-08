@@ -428,3 +428,26 @@ form[name="leave_message"] textarea {
     position: relative;
     top: -40px
 }
+
+
+/* Design for Project li */
+
+
+#Projects ul {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    list-style-type: none;
+    gap: 120px;
+    size: 100px;
+
+}
+
+#Projects ul li a {
+    font-size: 1.7rem;
+    color: #fafafa;
+    font-weight: 900;
+    background-color: red;
+    padding: 10px;
+    border-radius: 20px;
+}
