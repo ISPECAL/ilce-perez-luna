@@ -17,10 +17,11 @@
     display: flex;
     padding: 20%;
     text-align: center;
-    background-color: rgb(207, 10, 10);
+    background-color: rgb(255, 255, 255);
     padding-bottom: 10%;
     align-items: center;
     flex-direction: column;
+    background-color: #ffffff;
 
 }
 
@@ -95,6 +96,9 @@ h1 {
     border-style: dashed;
     display: inline;
     margin: 15px;
+    display: flex;
+    flex-direction: column;
+
 }
 
 
@@ -104,6 +108,7 @@ h1 {
     position: relative;
     top: -150px;
     padding: 15px;
+    font-weight: 500;
 }
 
 
@@ -125,7 +130,6 @@ h2 {
     margin-right: 15px;
     margin-top: 32%;
 
-
 }
 
 .header_menu li a {
@@ -133,6 +137,8 @@ h2 {
     text-decoration: none;
     color: rgb(0, 0, 0);
     font-size: 20px;
+    position: relative;
+    top: 100;
 
 }
 
@@ -176,83 +182,6 @@ h2 {
 }
 
 
-
-/*Phones*/
-@media (min-width:320px) and (max-width:667px) {}
-
-h1 {
-    padding-top: 4rem;
-    font-weight: bold;
-    font-style: italic;
-}
-
-
-img {
-    width: 4rem;
-    height: auto;
-
-
-
-}
-
-
-
-.header_menu li {
-    list-style: none;
-    cursor: pointer;
-    text-transform: uppercase;
-    display: inline-block;
-    margin-right: 15px;
-    margin-top: 32%;
-    position: relative;
-    top: -50px;
-
-
-}
-
-
-/*Tablets*/
-@media (min-width:668px) and (max-width:1023px) {
-
-
-
-    h2 {
-        font-size: 1.5rem;
-        color: rgb(173, 15, 15);
-        font-weight: lighter;
-        font-family: "Montserrat", sans-serif;
-    }
-
-    /*Need to give more space to the title "Ilce" and make the navbar workable in smartphones and tablets*/
-    h1 {
-        margin-top: 10px;
-        padding-top: 10px;
-        font-weight: bold;
-        font-style: italic;
-    }
-
-
-    img {
-        width: 4rem;
-        height: auto;
-    }
-
-
-
-
-
-}
-
-
-
-
-/*Desktop*/
-@media (min-width:1024px) {}
-
-
-/* When the screen gets smaller,
-make the nav bar a small dot to compress all text.*/
-
 /* Changes to li Skills Section */
 
 #Skills ul {
@@ -290,15 +219,49 @@ make the nav bar a small dot to compress all text.*/
 
 .About_p {
     position: relative;
-    top: -250px;
+    top: -750px;
     font-size: 140%;
+    display: flex;
     justify-content: center;
+    align-items: right;
+    right: -300px;
+    color: #d80000;
+    font-weight: 600;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typing 3s steps(22) forwards;
+
+
+}
+
+@keyframes typing {
+    from {
+
+        width: 0;
+    }
+
+    to {
+        width: 100%
+    }
+
+}
+
+
+
+
+
+.aboutme-container {
+    border-radius: 3px;
+    display: flex;
+    flex-direction: column;
+
 }
 
 
 .About_h2 {
-
-    color: #ffffff;
+    position: relative;
+    right: 600px;
+    color: #d80000;
 }
 
 .Projects_h2 {
@@ -307,13 +270,15 @@ make the nav bar a small dot to compress all text.*/
 }
 
 .Github_pic {
-    width: 400px;
+    width: 300px;
     height: auto;
 }
 
 #linkedin_logo {
-    width: 400px;
+    width: 300px;
     height: auto;
+    position: relative;
+    top: 50px;
 }
 
 
@@ -342,13 +307,13 @@ form[name="leave_message"] {
     flex-direction: column;
     align-items: center;
     gap: 15px;
-    width: 100%;
+    width: 50%;
     max-width: 500px;
     background: #fafafa;
     padding: 60px;
     border-radius: 10px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    font-size: 70px;
+    font-size: 30px;
 }
 
 form[name="leave_message"] label {
@@ -393,6 +358,8 @@ form[name="leave_message"] textarea {
     justify-content: center;
 }
 
+
+
 #messageN li {
     background-color: #f4f4f4;
     margin-top: 10px;
@@ -400,6 +367,7 @@ form[name="leave_message"] textarea {
     border-radius: 6px;
     font-size: 0.95rem;
 }
+
 
 #tMessages {
     display: flex;
@@ -430,16 +398,20 @@ form[name="leave_message"] textarea {
 }
 
 
+
 /* Design for Project li */
 
 
 #Projects ul {
     display: flex;
     text-align: center;
-    flex-direction: column;
+    flex-direction: row;
     list-style-type: none;
     gap: 120px;
     size: 100px;
+    flex-wrap: wrap;
+
+
 
 }
 
@@ -450,4 +422,225 @@ form[name="leave_message"] textarea {
     background-color: red;
     padding: 10px;
     border-radius: 20px;
+    position: relative;
+    top: -150px;
+    transition: 0.2s;
+
+}
+
+#Projects ul :hover {
+    color: rgb(0, 0, 0);
+
+}
+
+
+
+
+.image-container {
+    display: flex;
+    align-items: center;
+    margin-right: 400px;
+
+
+}
+
+.Me_pic {
+    top: -270px;
+
+    position: relative;
+    right: -40px;
+    width: 500px;
+    height: auto;
+    padding: 20px;
+    background-color: #000;
+    justify-content: flex-start;
+    align-items: center;
+    margin-right: 900px;
+    flex: 1;
+
+
+}
+
+
+/* Style the message list */
+#tMessages ul {
+    list-style: none;
+    padding: 0;
+}
+
+/* Each message (the <li>) */
+#tMessages li {
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* User's name (the <a>) */
+#tMessages li a {
+    color: #cc0000;
+    font-weight: bold;
+    text-decoration: none;
+    margin-right: 8px;
+}
+
+/* User's message (the <span>) */
+#tMessages li span {
+    color: #333;
+    font-size: 0.95rem;
+    flex: 1;
+}
+
+/* Remove button */
+#tMessages li button {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 6px 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+#tMessages li button:hover {
+    background-color: #e60000;
+}
+
+/* Style the message list */
+#tMessages ul {
+    list-style: none;
+    padding: 0;
+}
+
+/* Each message (the <li>) */
+#tMessages li {
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* User's name (the <a>) */
+#tMessages li a {
+    color: #ff0000;
+    font-weight: bold;
+    text-decoration: none;
+    margin-right: 6px;
+}
+
+/* User's message (the <span>) */
+#tMessages li span {
+    color: #333;
+    font-size: 0.95rem;
+    flex: 1;
+}
+
+/* Remove button */
+#tMessages li button {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 6px 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+#tMessages li button:hover {
+    background-color: #e60000;
+}
+
+
+
+/*Phones*/
+@media (min-width:320px) and (max-width:667px) {
+
+
+
+    .About_p,
+    h2,
+    .Me_pic {
+        position: static;
+        top: auto;
+        right: auto;
+    }
+
+
+    .header_menu li {
+        list-style: none;
+        cursor: pointer;
+        text-transform: uppercase;
+        display: inline-block;
+        margin-right: 15px;
+        margin-top: 32%;
+
+    }
+
+    .header_menu li a {
+
+        text-decoration: none;
+        color: rgb(0, 0, 0);
+        font-size: 20px;
+
+
+    }
+
+    .header_nav {
+        display: flex;
+        overflow: hidden;
+        align-items: right;
+    }
+
+
+
+    #h2 {
+
+        font-size: 20px;
+    }
+
+
+    #Experience {
+        text-align: center;
+        padding: 20%;
+
+    }
+
+    #Experience li {
+        border-color: rgb(244, 7, 7);
+        border-style: dashed;
+        display: inline;
+        margin: 15px;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+
+    #Experience ul li {
+
+        font-size: 60px;
+        position: relative;
+        top: -150px;
+        padding: 15px;
+        font-weight: 500;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
