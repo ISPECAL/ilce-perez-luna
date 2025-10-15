@@ -1,0 +1,273 @@
+/*Phones*/
+@media (min-width:320px) and (max-width:1000px) {
+
+    body {
+        overflow-x: hidden;
+    }
+
+
+    .image-container {
+
+        margin: 0%;
+
+    }
+
+
+    /* --- HEADER / NAV BAR --- */
+    .header_nav {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 1rem;
+
+    }
+
+
+
+
+    .header_logo {
+        position: static;
+        transform: none;
+        margin-bottom: 1rem;
+    }
+
+    .header_logo h1 {
+        font-size: 1.8rem;
+    }
+
+    .header_menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+    }
+
+    .header_menu li {
+        display: block;
+        margin: 0.3rem 0;
+        text-align: center;
+    }
+
+    .header_menu li a {
+        font-size: 1rem;
+        position: static;
+    }
+
+    /* --- SECCIÓN ABOUT --- */
+    #About {
+        margin-top: 10rem;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0rem;
+        text-align: center;
+        background-color: #fff;
+        height: auto;
+    }
+
+    /* Imagen principal */
+    .Me_pic {
+        position: relative;
+        top: 0;
+        right: 0;
+        margin: 0 auto;
+        width: 10rem;
+        height: auto;
+        background-color: #000;
+        padding: 0.5rem;
+        border-radius: 0.5rem;
+    }
+
+    /* Título "About Me" */
+    .About_h2 {
+        position: static;
+        color: #d80000;
+        font-size: 1.8rem;
+        margin-top: 1.5rem;
+        text-align: center;
+    }
+
+    /* Párrafo animado */
+    .About_p {
+        position: static;
+        margin-top: .5rem;
+        font-size: 1.1rem;
+        color: #d80000;
+        font-weight: 600;
+        white-space: wrap;
+        overflow: visible;
+        text-align: center;
+        animation: typing 3s steps(24) forwards;
+        font-size: 1rem;
+    }
+
+    /* Contenedor general */
+    .aboutme-container {
+        display: grid;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        gap: .5rem;
+
+
+    }
+
+    /* --- AJUSTE DE NAV Y FOTO JUNTOS --- */
+    #Ilce_imgs {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #fff;
+        margin-bottom: 2rem;
+    }
+
+    /* Ajustar otros márgenes */
+    #About,
+    #Ilce_imgs {
+        padding: 1rem;
+        padding-top: 0rem;
+    }
+
+
+    #Experience {
+        text-align: center;
+        padding: 3%;
+        position: relative;
+        top: 10rem;
+
+    }
+
+    .exp-H2 {
+        position: relative;
+        top: -13rem
+    }
+
+
+    #Experience li {
+        border-color: rgb(244, 7, 7);
+        border-style: dashed;
+        display: inline;
+        margin: 0.9375rem;
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        top: -10rem;
+
+    }
+
+    #Experience ul li {
+        font-size: 1rem;
+        position: relative;
+        top: -10rem;
+
+        padding: 0.9375rem;
+        font-weight: 500;
+    }
+
+
+    h2 {
+
+        font-size: 3rem;
+    }
+
+
+
+
+    /* Changes to li Skills Section */
+    #Skills ul {
+        font-size: 1rem;
+        position: relative;
+        top: -14rem;
+        list-style: none;
+        color: rgb(172, 7, 48);
+        padding-left: 0%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 2rem;
+    }
+
+
+    #Projects ul {
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        list-style-type: none;
+        gap: 6rem;
+        size: 6.0rem;
+        flex-wrap: wrap;
+    }
+
+    #Projects ul li a {
+        font-size: 1.2rem;
+        color: #fafafa;
+        font-weight: 900;
+        background-color: red;
+        padding: 0.625rem;
+        border-radius: 1.25rem;
+        position: relative;
+        top: -9.375rem;
+        transition: 0.2s;
+    }
+
+    .Projects_h2 {
+
+        color: rgb(172, 7, 48);
+
+    }
+
+
+
+    #Connect {
+        padding: 6%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    #Connect li {
+        position: relative;
+        top: -10.625rem;
+        text-align: center;
+        list-style: none;
+        display: inline-block;
+    }
+
+    .Github_pic {
+        width: 10rem;
+        height: auto;
+    }
+
+    #linkedin_logo {
+        width: 10rem;
+        height: auto;
+        position: relative;
+        top: 3.125rem;
+    }
+
+
+
+    .h2-Connect {
+        display: flex;
+        position: relative;
+        top: -8rem;
+        color: #000000;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 3rem;
+        padding-bottom: 2rem;
+    }
+
+    #Experience {
+        margin-top: 5rem;
+    }
+
+    #Skills {
+        margin-top: 11rem;
+    }
+
+
+}
